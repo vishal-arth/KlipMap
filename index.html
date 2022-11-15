@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d1e32bd16e917f358e933a3caf21dee2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d1e32bd16e917f358e933a3caf21dee2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d1e32bd16e917f358e933a3caf21dee2 = L.map(
+                "map_d1e32bd16e917f358e933a3caf21dee2",
+                {
+                    center: [22.167057857886153, 82.44140625000001],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b0b7c0b34b2f27322a45db020d90c123 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+            var marker_f20b9f2ef32487848c053fb161629d1f = L.marker(
+                [28.5437, 77.1282],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_164ac9168c5cc2aa893c27801e49bd4c = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_f20b9f2ef32487848c053fb161629d1f.setIcon(custom_icon_164ac9168c5cc2aa893c27801e49bd4c);
+        
+    
+            var marker_87a976caa10e8f1eb98f2d9b3d46674a = L.marker(
+                [20.2191, 80.9466],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_2450c7aa8a643c8d1eedfa75039797d2 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_87a976caa10e8f1eb98f2d9b3d46674a.setIcon(custom_icon_2450c7aa8a643c8d1eedfa75039797d2);
+        
+    
+            var marker_bee702c5472aabaa0b2c7a150b8e442c = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_d6d177654ed9ab457350f20cd798b336 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_bee702c5472aabaa0b2c7a150b8e442c.setIcon(custom_icon_d6d177654ed9ab457350f20cd798b336);
+        
+    
+            var marker_e4d77367eb3ba5dcb89738ca7da390e8 = L.marker(
+                [28.0733, 76.8588],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_692a191294a2fb23439e4a76a1a01d16 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_e4d77367eb3ba5dcb89738ca7da390e8.setIcon(custom_icon_692a191294a2fb23439e4a76a1a01d16);
+        
+    
+            var marker_5923a25516e6c9cae7db5a2b38115a0d = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_49e64e815fcc3ce5b63e88dbf1b06000 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_5923a25516e6c9cae7db5a2b38115a0d.setIcon(custom_icon_49e64e815fcc3ce5b63e88dbf1b06000);
+        
+    
+            var marker_ebbb3b24428da1334368deab33e90d65 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_9ffb25e03034aa8e241a09c120e77362 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_ebbb3b24428da1334368deab33e90d65.setIcon(custom_icon_9ffb25e03034aa8e241a09c120e77362);
+        
+    
+            var marker_691c93e16dc1fce46a29a78cfea609f2 = L.marker(
+                [24.9976, 79.9762],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_7af149120e631ace910d5737bd466f9c = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_691c93e16dc1fce46a29a78cfea609f2.setIcon(custom_icon_7af149120e631ace910d5737bd466f9c);
+        
+    
+            var marker_95767f82ca5e222810829983d3982b58 = L.marker(
+                [27.0321, 79.3918],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_8745540c642e3c0a124a1b421394b80d = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_95767f82ca5e222810829983d3982b58.setIcon(custom_icon_8745540c642e3c0a124a1b421394b80d);
+        
+    
+            var marker_2a781c31e1bf1524007458c752aca8d8 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_a933ed443e56bbc739c889b30e009367 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_2a781c31e1bf1524007458c752aca8d8.setIcon(custom_icon_a933ed443e56bbc739c889b30e009367);
+        
+    
+            var marker_babcf9b324e2bc3472ba8459f443ff42 = L.marker(
+                [24.812, 71.7947],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_bdf00412af2d49d52f809fe49fb3e5d7 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_babcf9b324e2bc3472ba8459f443ff42.setIcon(custom_icon_bdf00412af2d49d52f809fe49fb3e5d7);
+        
+    
+            var marker_ec646e01510dc0fe6d4e1884d68f1e75 = L.marker(
+                [26.4637, 76.1674],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_b7aa0c05b46c91d63dfb89da5f105d4d = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_ec646e01510dc0fe6d4e1884d68f1e75.setIcon(custom_icon_b7aa0c05b46c91d63dfb89da5f105d4d);
+        
+    
+            var marker_69ecabea0776ce5d9d01209e86796384 = L.marker(
+                [28.3832, 76.6429],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_83ebab20f539bbd5646dbe80e2108258 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_69ecabea0776ce5d9d01209e86796384.setIcon(custom_icon_83ebab20f539bbd5646dbe80e2108258);
+        
+    
+            var marker_e8778504b41e00e8c3929d6a281a5a6b = L.marker(
+                [28.2066, 76.795],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_2926169cc9187d0d30b1f55ec3cdd492 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_e8778504b41e00e8c3929d6a281a5a6b.setIcon(custom_icon_2926169cc9187d0d30b1f55ec3cdd492);
+        
+    
+            var marker_d3a9249e1ab4b402f0ed6714c6250740 = L.marker(
+                [27.5683, 76.4713],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_c6ffac3cdba2c6cd01f9011ab4e8f2ad = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_d3a9249e1ab4b402f0ed6714c6250740.setIcon(custom_icon_c6ffac3cdba2c6cd01f9011ab4e8f2ad);
+        
+    
+            var marker_17d01d73121a6f8f43f17a2cdd269fda = L.marker(
+                [28.042, 76.8506],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_485194cf5207353d24fb3c0e8cd968ac = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_17d01d73121a6f8f43f17a2cdd269fda.setIcon(custom_icon_485194cf5207353d24fb3c0e8cd968ac);
+        
+    
+            var marker_6d16274f56332683cd9ace57cd320cd6 = L.marker(
+                [27.3548, 76.2226],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_89e83b78802a57a699e85ef175bdc4c1 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_6d16274f56332683cd9ace57cd320cd6.setIcon(custom_icon_89e83b78802a57a699e85ef175bdc4c1);
+        
+    
+            var marker_70d681e58686190a1949c36f53f261e2 = L.marker(
+                [25.65, 75.4],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_feb68fd6a9c890bc64036a5206b2b3bb = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_70d681e58686190a1949c36f53f261e2.setIcon(custom_icon_feb68fd6a9c890bc64036a5206b2b3bb);
+        
+    
+            var marker_f3d05e42731ceda315a1a533c05c8a0c = L.marker(
+                [28.8808, 76.2427],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_fb635f1be86c5e77939652811bd81aa5 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_f3d05e42731ceda315a1a533c05c8a0c.setIcon(custom_icon_fb635f1be86c5e77939652811bd81aa5);
+        
+    
+            var marker_5b4603044c838b0c01fa722abda9793a = L.marker(
+                [24.5354, 78.5412],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_e7d9970f7617c7a8711e1ee9a2e940fa = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_5b4603044c838b0c01fa722abda9793a.setIcon(custom_icon_e7d9970f7617c7a8711e1ee9a2e940fa);
+        
+    
+            var marker_33ff678d68091e8ecd2ad57ced81a60a = L.marker(
+                [22.9393, 79.8381],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_feb967a78d16709b534f6a7c014dadf1 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_33ff678d68091e8ecd2ad57ced81a60a.setIcon(custom_icon_feb967a78d16709b534f6a7c014dadf1);
+        
+    
+            var marker_d021a38db42535b4d42b447008abc725 = L.marker(
+                [23.4846, 74.8298],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_a0ca2cb7229b95ac2e13820601b107f4 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_d021a38db42535b4d42b447008abc725.setIcon(custom_icon_a0ca2cb7229b95ac2e13820601b107f4);
+        
+    
+            var marker_9b5bcc31c454e98f243148abde14ee7d = L.marker(
+                [26.5818, 80.7546],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_6900ebfaba308f26bbb63c0f69282f07 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_9b5bcc31c454e98f243148abde14ee7d.setIcon(custom_icon_6900ebfaba308f26bbb63c0f69282f07);
+        
+    
+            var marker_350fcbf20a79d17378a74456fa9b9b4c = L.marker(
+                [26.5507, 79.9079],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_c46536eecf32e27fc5d8d9aa96af5bdc = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_350fcbf20a79d17378a74456fa9b9b4c.setIcon(custom_icon_c46536eecf32e27fc5d8d9aa96af5bdc);
+        
+    
+            var marker_a191ee0d1836287cb33dee1c54baaf16 = L.marker(
+                [26.5151, 80.4313],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_212c69d7ee87150c0b4bd7f2446ac5d8 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_a191ee0d1836287cb33dee1c54baaf16.setIcon(custom_icon_212c69d7ee87150c0b4bd7f2446ac5d8);
+        
+    
+            var marker_1c220f05da6b118ae3f205dc08f38a4a = L.marker(
+                [25.0565, 78.7964],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_d4ddfdf0fae1bfd8cd79e4a5d7c773f3 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_1c220f05da6b118ae3f205dc08f38a4a.setIcon(custom_icon_d4ddfdf0fae1bfd8cd79e4a5d7c773f3);
+        
+    
+            var marker_7b48c619367796af13b8470e72f7c313 = L.marker(
+                [27.7573, 74.2138],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_95a7e104a506c3e7a724e9c1a9a89781 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_7b48c619367796af13b8470e72f7c313.setIcon(custom_icon_95a7e104a506c3e7a724e9c1a9a89781);
+        
+    
+            var marker_478d0f3bb3bff31ba39fc32f49b27f4a = L.marker(
+                [25.8118, 80.5381],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_e125886650975684204eb06a1f7bfdcb = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_478d0f3bb3bff31ba39fc32f49b27f4a.setIcon(custom_icon_e125886650975684204eb06a1f7bfdcb);
+        
+    
+            var marker_2f0dc6db9881576bbfc72da41b1a0faa = L.marker(
+                [26.8297, 79.6071],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_bff8719c62c1c84218e4191cdb2bc834 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_2f0dc6db9881576bbfc72da41b1a0faa.setIcon(custom_icon_bff8719c62c1c84218e4191cdb2bc834);
+        
+    
+            var marker_6b8b044cd8c12144b2fd612d8016d9ce = L.marker(
+                [25.9849, 79.3778],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_b5b45d352a2158949714669abf75259b = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_6b8b044cd8c12144b2fd612d8016d9ce.setIcon(custom_icon_b5b45d352a2158949714669abf75259b);
+        
+    
+            var marker_0f48d954e71a3ac3f878884885e9822a = L.marker(
+                [26.8152, 80.6582],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_90070fb72cd935fb6fcf3553f4f43751 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_0f48d954e71a3ac3f878884885e9822a.setIcon(custom_icon_90070fb72cd935fb6fcf3553f4f43751);
+        
+    
+            var marker_94f8e2735d040b5765eea383f73be2fe = L.marker(
+                [26.0181, 79.6931],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_1b4a0ae80ff5c32bcd78effc8a384d92 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_94f8e2735d040b5765eea383f73be2fe.setIcon(custom_icon_1b4a0ae80ff5c32bcd78effc8a384d92);
+        
+    
+            var marker_e4bbffad5839c7b83a839e50ef367b09 = L.marker(
+                [26.6556, 88.0818],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_a9743cc9bd1ca89985f2f1ec6e1b98e9 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_e4bbffad5839c7b83a839e50ef367b09.setIcon(custom_icon_a9743cc9bd1ca89985f2f1ec6e1b98e9);
+        
+    
+            var marker_7c38fb404ed124adfe3d0c6d685f946c = L.marker(
+                [29.8799, 78.6923],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_89b06290d467ca4f0f94282f7cbb6cd3 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_7c38fb404ed124adfe3d0c6d685f946c.setIcon(custom_icon_89b06290d467ca4f0f94282f7cbb6cd3);
+        
+    
+            var marker_3f58b0760b12839ffb9160e0468a4c7b = L.marker(
+                [27.4778, 79.4746],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_cf1d2daebb07a343ab568a85519e0d6e = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_3f58b0760b12839ffb9160e0468a4c7b.setIcon(custom_icon_cf1d2daebb07a343ab568a85519e0d6e);
+        
+    
+            var marker_bf1b9b70c46f69eed587864dcac5b5a8 = L.marker(
+                [27.4778, 79.4746],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_6020f64aa2408789e8d0f0cafb18be34 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_bf1b9b70c46f69eed587864dcac5b5a8.setIcon(custom_icon_6020f64aa2408789e8d0f0cafb18be34);
+        
+    
+            var marker_b7f4c8f164569556e22463a61ec14a8b = L.marker(
+                [27.8154, 76.421],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_f658679f207f4de0e0db021c8d5fe0e5 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_b7f4c8f164569556e22463a61ec14a8b.setIcon(custom_icon_f658679f207f4de0e0db021c8d5fe0e5);
+        
+    
+            var marker_9e3f5772d7cf539b66b00b5b88f2411f = L.marker(
+                [26.8173, 79.7378],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_7f029e485f26c1dbb57e62ca1da822e4 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_9e3f5772d7cf539b66b00b5b88f2411f.setIcon(custom_icon_7f029e485f26c1dbb57e62ca1da822e4);
+        
+    
+            var marker_065cf9ce202623ab493ec8785726d49d = L.marker(
+                [24.787, 81.9334],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_1c0acdc862b71954d2110905314e368b = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_065cf9ce202623ab493ec8785726d49d.setIcon(custom_icon_1c0acdc862b71954d2110905314e368b);
+        
+    
+            var marker_1315dbc0e74a634ef1f23988d9da0f14 = L.marker(
+                [24.9283, 80.3516],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_b7529c350af66def7aa55441568a9e7f = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_1315dbc0e74a634ef1f23988d9da0f14.setIcon(custom_icon_b7529c350af66def7aa55441568a9e7f);
+        
+    
+            var marker_f2513a5d26dab93e38af53626b0c3017 = L.marker(
+                [26.4576, 81.626],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_5c5c02b8ff9d615626477979619f1353 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_f2513a5d26dab93e38af53626b0c3017.setIcon(custom_icon_5c5c02b8ff9d615626477979619f1353);
+        
+    
+            var marker_75093574e7ed2f9d3edab079defda00f = L.marker(
+                [27.0136, 79.7505],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_e46fdeb48e8facb12eaf0aff116ec0fe = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_75093574e7ed2f9d3edab079defda00f.setIcon(custom_icon_e46fdeb48e8facb12eaf0aff116ec0fe);
+        
+    
+            var marker_d7c7a2a5db0463dc48ee9bac490300c1 = L.marker(
+                [26.318, 79.4119],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_524083550dce1ca627be401c6f3e8e06 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_d7c7a2a5db0463dc48ee9bac490300c1.setIcon(custom_icon_524083550dce1ca627be401c6f3e8e06);
+        
+    
+            var marker_d60160a54d8328e7ee929f72fda9a66f = L.marker(
+                [24.7946, 85.6203],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_32a89d519406efa0eef1382cf8de31e1 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_d60160a54d8328e7ee929f72fda9a66f.setIcon(custom_icon_32a89d519406efa0eef1382cf8de31e1);
+        
+    
+            var marker_deeb13a01b32b95056ee008cf45bd6a8 = L.marker(
+                [22.8968, 79.3876],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_163027d74af71ef62687c389e0144bb2 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_deeb13a01b32b95056ee008cf45bd6a8.setIcon(custom_icon_163027d74af71ef62687c389e0144bb2);
+        
+    
+            var marker_1295fac2a41a265a5ca1e58348c7a13c = L.marker(
+                [25.5747, 83.933],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_b0bbe3f04bc09f1343b05c718dfa32d0 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_1295fac2a41a265a5ca1e58348c7a13c.setIcon(custom_icon_b0bbe3f04bc09f1343b05c718dfa32d0);
+        
+    
+            var marker_d2c7f0b0c185c4b9fb1be87410aeb0ce = L.marker(
+                [25.3946, 79.3951],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_4afc85ea3923bd8b82a9c2ab2f90bc04 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_d2c7f0b0c185c4b9fb1be87410aeb0ce.setIcon(custom_icon_4afc85ea3923bd8b82a9c2ab2f90bc04);
+        
+    
+            var marker_d9def217f0aa592c76c7627c91e7edf7 = L.marker(
+                [24.7436, 78.9616],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_28039f8695c84fbb310874e8f82be8e1 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_d9def217f0aa592c76c7627c91e7edf7.setIcon(custom_icon_28039f8695c84fbb310874e8f82be8e1);
+        
+    
+            var marker_939f3b6a1d07bbc39fd9c9c3d7fe25ab = L.marker(
+                [27.0978, 80.0572],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_195d7264fd672f519ea6f839128df236 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_939f3b6a1d07bbc39fd9c9c3d7fe25ab.setIcon(custom_icon_195d7264fd672f519ea6f839128df236);
+        
+    
+            var marker_1f94d45d31bab17fd3aa4743eee4c8ee = L.marker(
+                [27.005, 79.7643],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_e024aa5d70d0cd9ea5205e6a057a6e26 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_1f94d45d31bab17fd3aa4743eee4c8ee.setIcon(custom_icon_e024aa5d70d0cd9ea5205e6a057a6e26);
+        
+    
+            var marker_958bc61f18d2930ecc09b84e73f0d20b = L.marker(
+                [26.4475, 79.4643],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_86ca865fb51c0030018c8961feba02ab = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_958bc61f18d2930ecc09b84e73f0d20b.setIcon(custom_icon_86ca865fb51c0030018c8961feba02ab);
+        
+    
+            var marker_8b9d5c614619ad5fa217d07f7983eea5 = L.marker(
+                [26.0989, 80.1812],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_ec510d621486da2532ac1a7bf83200c3 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_8b9d5c614619ad5fa217d07f7983eea5.setIcon(custom_icon_ec510d621486da2532ac1a7bf83200c3);
+        
+    
+            var marker_2429c1a02cbf31c987fb39379a1fd349 = L.marker(
+                [20.4358, 82.7304],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_67418436bcaf0858eb9a3b824286c0c9 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_2429c1a02cbf31c987fb39379a1fd349.setIcon(custom_icon_67418436bcaf0858eb9a3b824286c0c9);
+        
+    
+            var marker_1d83ad08c2095423f10e7d99cdbb2e44 = L.marker(
+                [23.1818, 76.2443],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_beb841634977b01d1bb02162898f1f63 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_1d83ad08c2095423f10e7d99cdbb2e44.setIcon(custom_icon_beb841634977b01d1bb02162898f1f63);
+        
+    
+            var marker_ec3a09f0d3978249d962ee3bb5aa171a = L.marker(
+                [27.0529, 79.8345],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_1e637466c83c4c2695bbf5a96279d82a = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_ec3a09f0d3978249d962ee3bb5aa171a.setIcon(custom_icon_1e637466c83c4c2695bbf5a96279d82a);
+        
+    
+            var marker_e7ab06d9b025816795454d4935fb2262 = L.marker(
+                [27.0775, 79.4479],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_de3b935045bc3d8477219583c6387090 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_e7ab06d9b025816795454d4935fb2262.setIcon(custom_icon_de3b935045bc3d8477219583c6387090);
+        
+    
+            var marker_54c4f240f5e6a11ca9104f7b28ea44b8 = L.marker(
+                [17.6314, 78.9108],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_17c5d9d47863f13d65e426376f71ca1d = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_54c4f240f5e6a11ca9104f7b28ea44b8.setIcon(custom_icon_17c5d9d47863f13d65e426376f71ca1d);
+        
+    
+            var marker_291abd224f075725a4cdd6b4680a4b56 = L.marker(
+                [24.4627, 79.7906],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_7a2835ea4b3865f59da0f7f0e9fdbb19 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_291abd224f075725a4cdd6b4680a4b56.setIcon(custom_icon_7a2835ea4b3865f59da0f7f0e9fdbb19);
+        
+    
+            var marker_8cb6345da5ca7b8ab329d04605a8d106 = L.marker(
+                [26.9797, 81.3284],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_e0e1090de653a91efe2988a3c8b9ccde = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_8cb6345da5ca7b8ab329d04605a8d106.setIcon(custom_icon_e0e1090de653a91efe2988a3c8b9ccde);
+        
+    
+            var marker_09fa51addb97b4ca7baa13539bba510e = L.marker(
+                [26.0683, 79.3959],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_ab2bce09382c2a510eaf0829915fd049 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_09fa51addb97b4ca7baa13539bba510e.setIcon(custom_icon_ab2bce09382c2a510eaf0829915fd049);
+        
+    
+            var marker_b492bf92c549ae1fa415a408739ffba5 = L.marker(
+                [26.376, 79.1765],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_f90818756bddf22011176f7a86ffdbdb = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_b492bf92c549ae1fa415a408739ffba5.setIcon(custom_icon_f90818756bddf22011176f7a86ffdbdb);
+        
+    
+            var marker_e04900a599a03e2cbf0584da4015a5c8 = L.marker(
+                [24.7307, 82.6196],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_26dbcdc6331997b5bfabcd2ee658b231 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_e04900a599a03e2cbf0584da4015a5c8.setIcon(custom_icon_26dbcdc6331997b5bfabcd2ee658b231);
+        
+    
+            var marker_bae5d20bf1f39d5d388ff61fb5fcc147 = L.marker(
+                [27.8057, 79.0009],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_511dcb84ca7b2a40cbd915c44098d7e6 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_bae5d20bf1f39d5d388ff61fb5fcc147.setIcon(custom_icon_511dcb84ca7b2a40cbd915c44098d7e6);
+        
+    
+            var marker_e89515e7ae9ab18cc9eb983c6caa5db6 = L.marker(
+                [25.2813, 88.4],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_6bc9c1acf50b428c89d0ab0948d28e05 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_e89515e7ae9ab18cc9eb983c6caa5db6.setIcon(custom_icon_6bc9c1acf50b428c89d0ab0948d28e05);
+        
+    
+            var marker_7491ad329ca56c13f71bb2436f28e696 = L.marker(
+                [26.8346, 80.9249],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_7040e85e4325ec0d37f6cb32408aa3f7 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_7491ad329ca56c13f71bb2436f28e696.setIcon(custom_icon_7040e85e4325ec0d37f6cb32408aa3f7);
+        
+    
+            var marker_660420a6ddebc993523506824ab7916b = L.marker(
+                [24.5083, 79.216],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_5a522ca5b6d16dc067c1668bd78ab9f6 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_660420a6ddebc993523506824ab7916b.setIcon(custom_icon_5a522ca5b6d16dc067c1668bd78ab9f6);
+        
+    
+            var marker_4b59a8308bec2c5bd891f190b768f5eb = L.marker(
+                [24.7307, 82.6196],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_17c47166791fa8a7e366d40fb6cb44ca = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_4b59a8308bec2c5bd891f190b768f5eb.setIcon(custom_icon_17c47166791fa8a7e366d40fb6cb44ca);
+        
+    
+            var marker_a5409224596044ef656923917625bdb3 = L.marker(
+                [24.7307, 82.6196],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_50a2ca218c616756d122387308fd570b = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_a5409224596044ef656923917625bdb3.setIcon(custom_icon_50a2ca218c616756d122387308fd570b);
+        
+    
+            var marker_4ca87f1e99fc35cc2a9042da0ced35ae = L.marker(
+                [21.1466, 79.3995],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_7c57aa31c82f6a0d102a6f648d5cc28c = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_4ca87f1e99fc35cc2a9042da0ced35ae.setIcon(custom_icon_7c57aa31c82f6a0d102a6f648d5cc28c);
+        
+    
+            var marker_4e008227790a6193e1e2b0f5e46609c4 = L.marker(
+                [24.7307, 82.6196],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_42b04fcafca8f69b58a7b0efa6457407 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_4e008227790a6193e1e2b0f5e46609c4.setIcon(custom_icon_42b04fcafca8f69b58a7b0efa6457407);
+        
+    
+            var marker_55efc7a99953be541f53c46f348fb592 = L.marker(
+                [26.697, 83.1876],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_24d74b6778cbf772bf3daa283aff1d0b = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_55efc7a99953be541f53c46f348fb592.setIcon(custom_icon_24d74b6778cbf772bf3daa283aff1d0b);
+        
+    
+            var marker_b499e6c21067c73e4f4df9f4ae4913ae = L.marker(
+                [26.697, 83.1876],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_92bda77a715a91819c2d889afaad362d = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_b499e6c21067c73e4f4df9f4ae4913ae.setIcon(custom_icon_92bda77a715a91819c2d889afaad362d);
+        
+    
+            var marker_2d40858463d2639aa75c49bb38eb8daa = L.marker(
+                [26.697, 83.1876],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_bdbe92750fc8952393363dfdf307d2f0 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_2d40858463d2639aa75c49bb38eb8daa.setIcon(custom_icon_bdbe92750fc8952393363dfdf307d2f0);
+        
+    
+            var marker_3e95a097ab12c5ec30e24af0cceae707 = L.marker(
+                [26.697, 83.1876],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_318ba613f0f201f8f9879647d5a7b312 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_3e95a097ab12c5ec30e24af0cceae707.setIcon(custom_icon_318ba613f0f201f8f9879647d5a7b312);
+        
+    
+            var marker_6df4dbc7c21f6331ecdaaf9401bbcd9a = L.marker(
+                [26.697, 83.1876],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_30df0fe3cd40569c86f9ccd6981f54e8 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_6df4dbc7c21f6331ecdaaf9401bbcd9a.setIcon(custom_icon_30df0fe3cd40569c86f9ccd6981f54e8);
+        
+    
+            var marker_a2290a21a73c298f9b0f6f924ccd0d48 = L.marker(
+                [26.697, 83.1876],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_c99a12eeaf5ee40ff427c2c6f1e54e6a = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_a2290a21a73c298f9b0f6f924ccd0d48.setIcon(custom_icon_c99a12eeaf5ee40ff427c2c6f1e54e6a);
+        
+    
+            var marker_b44a917750321e180434bee8ce583e1b = L.marker(
+                [26.697, 83.1876],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_af6bdd738d46e7e245545c3f951cae44 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_b44a917750321e180434bee8ce583e1b.setIcon(custom_icon_af6bdd738d46e7e245545c3f951cae44);
+        
+    
+            var marker_8784a64ba26fcabfc065b3136c85490b = L.marker(
+                [25.5745, 86.8938],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_7a4749d1460fe0a9b162b02dfc161c47 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_8784a64ba26fcabfc065b3136c85490b.setIcon(custom_icon_7a4749d1460fe0a9b162b02dfc161c47);
+        
+    
+            var marker_14e7a135f597078461a03ec80fd746f8 = L.marker(
+                [27.8194, 79.4814],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_04acd3b14040f27321b8ba8a8873a6c3 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_14e7a135f597078461a03ec80fd746f8.setIcon(custom_icon_04acd3b14040f27321b8ba8a8873a6c3);
+        
+    
+            var marker_262bde2c69f8ef009a325c642e09ca52 = L.marker(
+                [26.2519, 82.1123],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_6bdd9b9e783e3eadcac26d97e7f99dd2 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_262bde2c69f8ef009a325c642e09ca52.setIcon(custom_icon_6bdd9b9e783e3eadcac26d97e7f99dd2);
+        
+    
+            var marker_1208d3602a2e3b5adbab68d12880490a = L.marker(
+                [26.2519, 82.1123],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_f7e154f1c9fd80887ff742f7ad794115 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_1208d3602a2e3b5adbab68d12880490a.setIcon(custom_icon_f7e154f1c9fd80887ff742f7ad794115);
+        
+    
+            var marker_47af7804500ed02fbe281c7ecef3c1d2 = L.marker(
+                [26.2519, 82.1123],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_ee7e078f577c9207757f920fa192c52c = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_47af7804500ed02fbe281c7ecef3c1d2.setIcon(custom_icon_ee7e078f577c9207757f920fa192c52c);
+        
+    
+            var marker_0e8e220a478a95a58e19a9c92293a299 = L.marker(
+                [26.2519, 82.1123],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_1dd7454ec5c263de647e58a0e90e409c = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_0e8e220a478a95a58e19a9c92293a299.setIcon(custom_icon_1dd7454ec5c263de647e58a0e90e409c);
+        
+    
+            var marker_ed29b5d5724f70e7000e0c5455aafc8b = L.marker(
+                [26.2519, 82.1123],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_bef1afce00aefb39777c59a98cf3fc27 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_ed29b5d5724f70e7000e0c5455aafc8b.setIcon(custom_icon_bef1afce00aefb39777c59a98cf3fc27);
+        
+    
+            var marker_fd10d083ee3543f5b55c6aa9264d85a9 = L.marker(
+                [26.2519, 82.1123],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_377c7e06cebc5dfa85c3a5fd4010df63 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_fd10d083ee3543f5b55c6aa9264d85a9.setIcon(custom_icon_377c7e06cebc5dfa85c3a5fd4010df63);
+        
+    
+            var marker_1f364c8f56e670959d0fc6e3540062c2 = L.marker(
+                [24.6449, 85.5003],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_05396bcf179f115667bc2cb78c58c39d = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_1f364c8f56e670959d0fc6e3540062c2.setIcon(custom_icon_05396bcf179f115667bc2cb78c58c39d);
+        
+    
+            var marker_2ca89a943b9430688b74f4b494911666 = L.marker(
+                [26.8738, 81.0352],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_7197eb086d4292ed55758f12b81f2c5b = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_2ca89a943b9430688b74f4b494911666.setIcon(custom_icon_7197eb086d4292ed55758f12b81f2c5b);
+        
+    
+            var marker_9750bf66d239e6f81d832d5cb2609583 = L.marker(
+                [26.2519, 82.1123],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_fbf3fd276ab9404a4f688ce41b4e94d2 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_9750bf66d239e6f81d832d5cb2609583.setIcon(custom_icon_fbf3fd276ab9404a4f688ce41b4e94d2);
+        
+    
+            var marker_295a033618bf520ae26b3eb15354b670 = L.marker(
+                [25.2971, 82.5939],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_86677d6de5eaff89bca2525d565a926b = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_295a033618bf520ae26b3eb15354b670.setIcon(custom_icon_86677d6de5eaff89bca2525d565a926b);
+        
+    
+            var marker_b6318acc98d699cbd4bdbf519ac54cb1 = L.marker(
+                [25.4295, 82.8166],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_e3c66c54a178aaa277834749d6d23cf9 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_b6318acc98d699cbd4bdbf519ac54cb1.setIcon(custom_icon_e3c66c54a178aaa277834749d6d23cf9);
+        
+    
+            var marker_ee5568fcec43d83326e9d1801099e67e = L.marker(
+                [26.9663, 79.6503],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_0558d96f09ac44b89bb6e320541f39a3 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_ee5568fcec43d83326e9d1801099e67e.setIcon(custom_icon_0558d96f09ac44b89bb6e320541f39a3);
+        
+    
+            var marker_26daf6a1fc3ce750b3bfb89881c7a429 = L.marker(
+                [25.0305, 81.3189],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_d8447ce471e371f8685319aed2fbb6b4 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_26daf6a1fc3ce750b3bfb89881c7a429.setIcon(custom_icon_d8447ce471e371f8685319aed2fbb6b4);
+        
+    
+            var marker_2f8fe169a8a3e5c9653773240f2affcb = L.marker(
+                [26.6141, 80.677],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_16f80be26227113ca96eb0266c22902c = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_2f8fe169a8a3e5c9653773240f2affcb.setIcon(custom_icon_16f80be26227113ca96eb0266c22902c);
+        
+    
+            var marker_ec8f2a8495f5a32353972b703fbc8b1a = L.marker(
+                [26.5616, 81.0307],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_c4e54248dec875c6fda49e63deff3d53 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_ec8f2a8495f5a32353972b703fbc8b1a.setIcon(custom_icon_c4e54248dec875c6fda49e63deff3d53);
+        
+    
+            var marker_60e3141ef631817d66a38430e8c2519f = L.marker(
+                [26.9653, 79.6179],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_c9286c017d880a94019c7ad9f2195904 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_60e3141ef631817d66a38430e8c2519f.setIcon(custom_icon_c9286c017d880a94019c7ad9f2195904);
+        
+    
+            var marker_5a16ac0ca9c51ff624509d0a5ce4c2c8 = L.marker(
+                [21.9414, 79.9878],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_57206f4d68cda693ee69dc4afeb8d69e = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_5a16ac0ca9c51ff624509d0a5ce4c2c8.setIcon(custom_icon_57206f4d68cda693ee69dc4afeb8d69e);
+        
+    
+            var marker_3010443ca1f0d4fae99f27467de4b98e = L.marker(
+                [27.1427, 79.8612],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_8da765156614f169815e1798b88179f0 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_3010443ca1f0d4fae99f27467de4b98e.setIcon(custom_icon_8da765156614f169815e1798b88179f0);
+        
+    
+            var marker_e821f0759c7340465dd9e218df2c0399 = L.marker(
+                [28.239, 78.438],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_7a3b476634ac7e081e71693b0550d045 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_e821f0759c7340465dd9e218df2c0399.setIcon(custom_icon_7a3b476634ac7e081e71693b0550d045);
+        
+    
+            var marker_1dd2ed5bc74b5738fe5a3320f9fecf7f = L.marker(
+                [27.059, 78.7133],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_a350e7e31531e79701777d7b7f6c290d = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_1dd2ed5bc74b5738fe5a3320f9fecf7f.setIcon(custom_icon_a350e7e31531e79701777d7b7f6c290d);
+        
+    
+            var marker_8990e50edee62d3b340c10bc8ce8a831 = L.marker(
+                [25.3333, 75.0167],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_58c208539b1a06d23760275e58d931da = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_8990e50edee62d3b340c10bc8ce8a831.setIcon(custom_icon_58c208539b1a06d23760275e58d931da);
+        
+    
+            var marker_60912d1d12b5e056b6df429a989fc9a0 = L.marker(
+                [26.7789, 79.1115],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_d8fcbf426f3f657299c064635e12b652 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_60912d1d12b5e056b6df429a989fc9a0.setIcon(custom_icon_d8fcbf426f3f657299c064635e12b652);
+        
+    
+            var marker_c5c1a127dbb7f5757eb2b8f142061b0c = L.marker(
+                [26.368, 79.2992],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_bb9298bd1fd41bee18b89d8b28882f42 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_c5c1a127dbb7f5757eb2b8f142061b0c.setIcon(custom_icon_bb9298bd1fd41bee18b89d8b28882f42);
+        
+    
+            var marker_b155a3e61aea5330caf2b78cbcef1f40 = L.marker(
+                [27.9523, 79.2051],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_7a1b2c4d1a299db32339aa37ed855c50 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_b155a3e61aea5330caf2b78cbcef1f40.setIcon(custom_icon_7a1b2c4d1a299db32339aa37ed855c50);
+        
+    
+            var marker_9337de890813bdc7c1468f3f565686d9 = L.marker(
+                [27.9523, 79.2051],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_5a710f827569228a98d31569a5933655 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_9337de890813bdc7c1468f3f565686d9.setIcon(custom_icon_5a710f827569228a98d31569a5933655);
+        
+    
+            var marker_fc530c268ea99b45f67054a60949a0ed = L.marker(
+                [26.9348, 79.144],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_cd56a4a4ff9ecb679521b4a082e67cee = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_fc530c268ea99b45f67054a60949a0ed.setIcon(custom_icon_cd56a4a4ff9ecb679521b4a082e67cee);
+        
+    
+            var marker_73601e3cc2698c9fb81513e1cee54cf2 = L.marker(
+                [25.0773, 77.837],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_736d370c24c4a1bf44b708038caf561c = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_73601e3cc2698c9fb81513e1cee54cf2.setIcon(custom_icon_736d370c24c4a1bf44b708038caf561c);
+        
+    
+            var marker_dd8095e5c4723336098e5f684e1de038 = L.marker(
+                [26.7035, 80.4367],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_6b2c5976667db7c402cb40951b04a449 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_dd8095e5c4723336098e5f684e1de038.setIcon(custom_icon_6b2c5976667db7c402cb40951b04a449);
+        
+    
+            var marker_715ae4eeac6a47f00bd216ab417fda7d = L.marker(
+                [26.7035, 80.4367],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_4b5d93a30e4dd16dc29de2013ee85d58 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_715ae4eeac6a47f00bd216ab417fda7d.setIcon(custom_icon_4b5d93a30e4dd16dc29de2013ee85d58);
+        
+    
+            var marker_c3ff66d831546f3612070702fb79f437 = L.marker(
+                [24.1014, 81.6617],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_f7c445c6e6bcb8f72cf0766ccf56e63c = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_c3ff66d831546f3612070702fb79f437.setIcon(custom_icon_f7c445c6e6bcb8f72cf0766ccf56e63c);
+        
+    
+            var marker_a64dcfe771ab2b6c5beebea244ad67be = L.marker(
+                [26.0981, 79.3719],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_90d81fbd17449dde955932fe75a1cd4c = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_a64dcfe771ab2b6c5beebea244ad67be.setIcon(custom_icon_90d81fbd17449dde955932fe75a1cd4c);
+        
+    
+            var marker_ba39318d32db74cf596bea22180804fa = L.marker(
+                [24.8632, 78.4796],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_5cfc5c5dad300fe06dfdc82f1a2895ad = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_ba39318d32db74cf596bea22180804fa.setIcon(custom_icon_5cfc5c5dad300fe06dfdc82f1a2895ad);
+        
+    
+            var marker_94eb1c975e3b645767b438628153e37b = L.marker(
+                [25.5043, 79.6215],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_acae3d6385bf29f2c5df25760bd808c0 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_94eb1c975e3b645767b438628153e37b.setIcon(custom_icon_acae3d6385bf29f2c5df25760bd808c0);
+        
+    
+            var marker_015c41ff7a5fa63f9644ee036a978219 = L.marker(
+                [26.7063, 79.892],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_c102da6d7edac2e7584b712c9090f21d = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_015c41ff7a5fa63f9644ee036a978219.setIcon(custom_icon_c102da6d7edac2e7584b712c9090f21d);
+        
+    
+            var marker_a2a5340a9c66886045c8081c2d804ede = L.marker(
+                [27.7275, 79.6431],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_d83899669c1c0f5d2e8db88bddf71b6a = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_a2a5340a9c66886045c8081c2d804ede.setIcon(custom_icon_d83899669c1c0f5d2e8db88bddf71b6a);
+        
+    
+            var marker_853365ed6f049825f699c170accdba52 = L.marker(
+                [26.797, 77.8403],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_b1a45e0f681f7332e76621de6223000b = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_853365ed6f049825f699c170accdba52.setIcon(custom_icon_b1a45e0f681f7332e76621de6223000b);
+        
+    
+            var marker_4c5954d0ff0279e71a093de95403f7f5 = L.marker(
+                [28.34, 79.1121],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_72a7f85958dadd5c7696f589cafbfd4c = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_4c5954d0ff0279e71a093de95403f7f5.setIcon(custom_icon_72a7f85958dadd5c7696f589cafbfd4c);
+        
+    
+            var marker_f6864741f9d6bf34c380dd694126deca = L.marker(
+                [23.3922, 81.691],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_00637850c2b1e430ac73f658594c1a1c = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_f6864741f9d6bf34c380dd694126deca.setIcon(custom_icon_00637850c2b1e430ac73f658594c1a1c);
+        
+    
+            var marker_47cc9f1c806a069afae1a8407ba5b4f7 = L.marker(
+                [32.9778, 74.7514],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_359ee5d4ceeaa92d79eb3eda81d59e4f = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_47cc9f1c806a069afae1a8407ba5b4f7.setIcon(custom_icon_359ee5d4ceeaa92d79eb3eda81d59e4f);
+        
+    
+            var marker_d1c7faeee3494886aed3a69b2a35d9dd = L.marker(
+                [26.9965, 79.1433],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_2c0fb2cd4c2db27dd7132e1ff04725f7 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_d1c7faeee3494886aed3a69b2a35d9dd.setIcon(custom_icon_2c0fb2cd4c2db27dd7132e1ff04725f7);
+        
+    
+            var marker_b5cf99c86a3dacccca37c08d2f83d16b = L.marker(
+                [27.5588, 79.631],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_77f3616b5018d48f6e84f7b163926ede = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_b5cf99c86a3dacccca37c08d2f83d16b.setIcon(custom_icon_77f3616b5018d48f6e84f7b163926ede);
+        
+    
+            var marker_99ffee9fc7193fb0fe0a796b2752bd40 = L.marker(
+                [26.6697, 79.9981],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_6513961a5208cc426b99e33ba38c08de = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_99ffee9fc7193fb0fe0a796b2752bd40.setIcon(custom_icon_6513961a5208cc426b99e33ba38c08de);
+        
+    
+            var marker_959189861d66d3d1402299f3432fef17 = L.marker(
+                [24.4692, 77.554],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_7f4a3b1bb0a9c717eeb356913ae8830b = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_959189861d66d3d1402299f3432fef17.setIcon(custom_icon_7f4a3b1bb0a9c717eeb356913ae8830b);
+        
+    
+            var marker_d4a69b5cb96776d2abd357cce01908d2 = L.marker(
+                [26.763, 73.074],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_87279fc2d0ae46b4827c13bb1bdf9229 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_d4a69b5cb96776d2abd357cce01908d2.setIcon(custom_icon_87279fc2d0ae46b4827c13bb1bdf9229);
+        
+    
+            var marker_4e9f5565b0be0df7447844c480298b15 = L.marker(
+                [21.8438, 80.8516],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_d1b8a8fae129268820d0d18df5c20ae9 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_4e9f5565b0be0df7447844c480298b15.setIcon(custom_icon_d1b8a8fae129268820d0d18df5c20ae9);
+        
+    
+            var marker_bc10c957c17b028bd73330d6eb3fe461 = L.marker(
+                [26.3939, 79.4068],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_28e37f929bbacb7a0b6c284c539c521f = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_bc10c957c17b028bd73330d6eb3fe461.setIcon(custom_icon_28e37f929bbacb7a0b6c284c539c521f);
+        
+    
+            var marker_829248652065f3e37495f83d69a6664d = L.marker(
+                [26.0687, 81.0324],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_3ea2ee757dbddd24817cca434a7c566c = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_829248652065f3e37495f83d69a6664d.setIcon(custom_icon_3ea2ee757dbddd24817cca434a7c566c);
+        
+    
+            var marker_eb853efc90e7d2ce78905add02a16fa9 = L.marker(
+                [26.5023, 79.8326],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_a38b576eaaef0bfd0e16a574b744bcee = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_eb853efc90e7d2ce78905add02a16fa9.setIcon(custom_icon_a38b576eaaef0bfd0e16a574b744bcee);
+        
+    
+            var marker_acf334e1064e4b86b8b9d4964db75b41 = L.marker(
+                [26.9397, 79.0846],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_1e6a371ef9bbfcbc0fd347d630dc0d1a = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_acf334e1064e4b86b8b9d4964db75b41.setIcon(custom_icon_1e6a371ef9bbfcbc0fd347d630dc0d1a);
+        
+    
+            var marker_e85c12a1e38222cbece69b87c3d45159 = L.marker(
+                [25.9121, 79.5999],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_6b6b26399301b24c42b45fc078156c15 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_e85c12a1e38222cbece69b87c3d45159.setIcon(custom_icon_6b6b26399301b24c42b45fc078156c15);
+        
+    
+            var marker_d309df097f1a2ce15abc63f9a4f97b3a = L.marker(
+                [23.4846, 74.8298],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_00e1f8229c935befa6b16392cdeda574 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_d309df097f1a2ce15abc63f9a4f97b3a.setIcon(custom_icon_00e1f8229c935befa6b16392cdeda574);
+        
+    
+            var marker_19abe0b619f5ecfe4ff30310f57b45dd = L.marker(
+                [26.396, 81.1396],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_4c220b92411975166ba1d68cbaa5cc97 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_19abe0b619f5ecfe4ff30310f57b45dd.setIcon(custom_icon_4c220b92411975166ba1d68cbaa5cc97);
+        
+    
+            var marker_a8a1e8ebe6b6aae07c678f67510010e1 = L.marker(
+                [29.8574, 78.6649],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_874f72f1a8462cb2314a726ba9132f8b = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_a8a1e8ebe6b6aae07c678f67510010e1.setIcon(custom_icon_874f72f1a8462cb2314a726ba9132f8b);
+        
+    
+            var marker_ca5875878796fa113e73f4434797cbf6 = L.marker(
+                [27.2188, 79.377],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_4d31d8ee2c86f441962a1974c9023ff4 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_ca5875878796fa113e73f4434797cbf6.setIcon(custom_icon_4d31d8ee2c86f441962a1974c9023ff4);
+        
+    
+            var marker_21e3f4db93ba024e302ee2289dc4d2e5 = L.marker(
+                [26.7358, 95.0584],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_53da3e4616c458dbca3e1b367bccdb69 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_21e3f4db93ba024e302ee2289dc4d2e5.setIcon(custom_icon_53da3e4616c458dbca3e1b367bccdb69);
+        
+    
+            var marker_8fb935d4d8fa8b522145a0965d4cd57d = L.marker(
+                [26.0941, 79.7638],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_e2b4059771e0460ced5b4b6b3f4e649e = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_8fb935d4d8fa8b522145a0965d4cd57d.setIcon(custom_icon_e2b4059771e0460ced5b4b6b3f4e649e);
+        
+    
+            var marker_9dcca353fc1ad1567b862d836f04c6b0 = L.marker(
+                [26.94, 79.8023],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_028a022d9176861b9bdeb3dc035f48c5 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_9dcca353fc1ad1567b862d836f04c6b0.setIcon(custom_icon_028a022d9176861b9bdeb3dc035f48c5);
+        
+    
+            var marker_cf6b6f8837a4477f946e2d2dc2e5179f = L.marker(
+                [26.3723, 81.4792],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_04c2229918f1e043ba3792e86b125105 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_cf6b6f8837a4477f946e2d2dc2e5179f.setIcon(custom_icon_04c2229918f1e043ba3792e86b125105);
+        
+    
+            var marker_a8ab7ff124c196be445dc4174bb0c2f0 = L.marker(
+                [26.1116, 76.899],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_d2db1137d3bcaae62a258443fa6dbbb8 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_a8ab7ff124c196be445dc4174bb0c2f0.setIcon(custom_icon_d2db1137d3bcaae62a258443fa6dbbb8);
+        
+    
+            var marker_327cffeb3319ba2c34007ab4ff285289 = L.marker(
+                [26.2748, 82.4708],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_e870b5c46d5829dc13a4c828975d6773 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_327cffeb3319ba2c34007ab4ff285289.setIcon(custom_icon_e870b5c46d5829dc13a4c828975d6773);
+        
+    
+            var marker_53490b19263e06757913afdd3dd17494 = L.marker(
+                [21.8874, 78.6462],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_71d0791393ada38b43515aceb2720ec8 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_53490b19263e06757913afdd3dd17494.setIcon(custom_icon_71d0791393ada38b43515aceb2720ec8);
+        
+    
+            var marker_2a7cac2d233418925673f909487ef127 = L.marker(
+                [24.5847, 75.8829],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_7658236b306d9e3e8de43be8d58efb25 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_2a7cac2d233418925673f909487ef127.setIcon(custom_icon_7658236b306d9e3e8de43be8d58efb25);
+        
+    
+            var marker_36ccd9ea7e9c9ca6aa91b34b6a97f15e = L.marker(
+                [25.3602, 79.3723],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_826cc77eb986678a0912cfa2f6be3e1e = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_36ccd9ea7e9c9ca6aa91b34b6a97f15e.setIcon(custom_icon_826cc77eb986678a0912cfa2f6be3e1e);
+        
+    
+            var marker_94d80c52a1fac3c3ed8164eebb08d04e = L.marker(
+                [26.2834, 81.7429],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_584af8aac215dedf3f4dfe497df64e29 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_94d80c52a1fac3c3ed8164eebb08d04e.setIcon(custom_icon_584af8aac215dedf3f4dfe497df64e29);
+        
+    
+            var marker_f712a43755c110e12ea42fbf846d66ae = L.marker(
+                [25.5727, 81.0405],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_b221beff2b30bf78226ea4343c9a7c4f = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_f712a43755c110e12ea42fbf846d66ae.setIcon(custom_icon_b221beff2b30bf78226ea4343c9a7c4f);
+        
+    
+            var marker_7c8bbd1718995bd7c03946389814cda2 = L.marker(
+                [25.1001, 78.9881],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_42e58e615ce89ee2112115986b23e834 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_7c8bbd1718995bd7c03946389814cda2.setIcon(custom_icon_42e58e615ce89ee2112115986b23e834);
+        
+    
+            var marker_b1d76a8e2a023fe25d26331c6112e97a = L.marker(
+                [27.2199, 79.99],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_f9922a1677193110c49c389d96e1dd96 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_b1d76a8e2a023fe25d26331c6112e97a.setIcon(custom_icon_f9922a1677193110c49c389d96e1dd96);
+        
+    
+            var marker_610d04f95b8c144fc0ddd00d6a1c6076 = L.marker(
+                [25.0305, 81.3189],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_5041805b6a46905de7b30a5e0c3983b1 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_610d04f95b8c144fc0ddd00d6a1c6076.setIcon(custom_icon_5041805b6a46905de7b30a5e0c3983b1);
+        
+    
+            var marker_5df5bbaacc7b3c548bea0cbbfee15a13 = L.marker(
+                [26.2502, 80.3693],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_241344c056530504b208886ba20459bf = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_5df5bbaacc7b3c548bea0cbbfee15a13.setIcon(custom_icon_241344c056530504b208886ba20459bf);
+        
+    
+            var marker_31a64ba780b01602442ef7f58dae3530 = L.marker(
+                [26.7064, 80.6201],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_e0d0fa05fa7ca90edbb65eda2f59b936 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_31a64ba780b01602442ef7f58dae3530.setIcon(custom_icon_e0d0fa05fa7ca90edbb65eda2f59b936);
+        
+    
+            var marker_915f5f484890b5d334104084fbed0cfb = L.marker(
+                [24.5681, 79.3069],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_f0a33abe17b51fee07f71e8f21a1ff6e = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_915f5f484890b5d334104084fbed0cfb.setIcon(custom_icon_f0a33abe17b51fee07f71e8f21a1ff6e);
+        
+    
+            var marker_a4c81e7bcc3c0b13fdf5f92c561f2006 = L.marker(
+                [26.9024, 79.9793],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_8bf4d89d90ce861766c7fcef99c8c947 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_a4c81e7bcc3c0b13fdf5f92c561f2006.setIcon(custom_icon_8bf4d89d90ce861766c7fcef99c8c947);
+        
+    
+            var marker_18727f7795d084c1edabea48943cab09 = L.marker(
+                [26.8406, 79.5421],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_dce29a189212f4d5d46620afc2a3b150 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_18727f7795d084c1edabea48943cab09.setIcon(custom_icon_dce29a189212f4d5d46620afc2a3b150);
+        
+    
+            var marker_9aa6168c395fa3988c2b5681653ddbbe = L.marker(
+                [27.351, 80.4857],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_fd3b90ea765e77f474b2f4869ecf336d = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_9aa6168c395fa3988c2b5681653ddbbe.setIcon(custom_icon_fd3b90ea765e77f474b2f4869ecf336d);
+        
+    
+            var marker_2b1644069f7cbe0ba44b3eaf1503802e = L.marker(
+                [26.9014, 79.6604],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_3f6cc19f04a70299b55df532472d0a68 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_2b1644069f7cbe0ba44b3eaf1503802e.setIcon(custom_icon_3f6cc19f04a70299b55df532472d0a68);
+        
+    
+            var marker_71bcb72b1634068be08cf01e04a8c643 = L.marker(
+                [25.8604, 79.8054],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_5f56cd81d6bc34c5bd99dc54414a2c9d = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_71bcb72b1634068be08cf01e04a8c643.setIcon(custom_icon_5f56cd81d6bc34c5bd99dc54414a2c9d);
+        
+    
+            var marker_0a8d0580b8799453bb3ce0aa7534a1aa = L.marker(
+                [25.1237, 77.5112],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_9682eccf23caf776ba529003cb696b0e = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_0a8d0580b8799453bb3ce0aa7534a1aa.setIcon(custom_icon_9682eccf23caf776ba529003cb696b0e);
+        
+    
+            var marker_1aac5a548109a9ec74a5873757b238cf = L.marker(
+                [24.0569, 78.245],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_a37a5103b039f5f7e1e421b003dd52c9 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_1aac5a548109a9ec74a5873757b238cf.setIcon(custom_icon_a37a5103b039f5f7e1e421b003dd52c9);
+        
+    
+            var marker_78f27d75c1afc88fcc2aedb23505363b = L.marker(
+                [28.2102, 76.8606],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_1d60df25d08ddbdb19be22d61ab6f78f = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_78f27d75c1afc88fcc2aedb23505363b.setIcon(custom_icon_1d60df25d08ddbdb19be22d61ab6f78f);
+        
+    
+            var marker_fba5379d1dd457223de4fd8ef1261bd9 = L.marker(
+                [24.3875, 74.0471],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_937e107e39da2680a821c1b47b42641c = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_fba5379d1dd457223de4fd8ef1261bd9.setIcon(custom_icon_937e107e39da2680a821c1b47b42641c);
+        
+    
+            var marker_a558189f1ee24269fcb1134bc254b077 = L.marker(
+                [26.1416, 70.588],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_9ddebc542deb79bf5fde6192fd9d0e0e = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_a558189f1ee24269fcb1134bc254b077.setIcon(custom_icon_9ddebc542deb79bf5fde6192fd9d0e0e);
+        
+    
+            var marker_f496314aaab1fd0f3750978eb9a214e3 = L.marker(
+                [28.5345, 78.0655],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_e347f339bb223ac80c097c0cc4ce593a = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_f496314aaab1fd0f3750978eb9a214e3.setIcon(custom_icon_e347f339bb223ac80c097c0cc4ce593a);
+        
+    
+            var marker_478c9d50746c07de6a99cfedceda05d6 = L.marker(
+                [26.8962, 78.0418],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_1d2fa3ef6bdfab81e363413d1e5fcee1 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_478c9d50746c07de6a99cfedceda05d6.setIcon(custom_icon_1d2fa3ef6bdfab81e363413d1e5fcee1);
+        
+    
+            var marker_caad64b26930f0cc85015c06eae580c3 = L.marker(
+                [24.7865, 78.8337],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_4b9a671ba3ba3f63ff1041f3b535481a = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_caad64b26930f0cc85015c06eae580c3.setIcon(custom_icon_4b9a671ba3ba3f63ff1041f3b535481a);
+        
+    
+            var marker_4a55618f97a2f66ee21489562df66a38 = L.marker(
+                [25.4529, 78.4541],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_c3757c56270ea49bcd4a839b1fd8cd87 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_4a55618f97a2f66ee21489562df66a38.setIcon(custom_icon_c3757c56270ea49bcd4a839b1fd8cd87);
+        
+    
+            var marker_63db22301c7b1bd57bb50ed62e242e98 = L.marker(
+                [12.9633, 77.7794],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_e5707305833eb9772cdf996376202d00 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_63db22301c7b1bd57bb50ed62e242e98.setIcon(custom_icon_e5707305833eb9772cdf996376202d00);
+        
+    
+            var marker_b214ceccca786700969e123335daaf15 = L.marker(
+                [26.71, 88.4285],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_8c5aa303eedd7b9c8522b0183e244550 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_b214ceccca786700969e123335daaf15.setIcon(custom_icon_8c5aa303eedd7b9c8522b0183e244550);
+        
+    
+            var marker_2802e4553f7cedb97ed728ebaf6d0e8b = L.marker(
+                [21.9233, 77.5525],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_e7f05f7419d39aedd526a97f23c3d4bb = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_2802e4553f7cedb97ed728ebaf6d0e8b.setIcon(custom_icon_e7f05f7419d39aedd526a97f23c3d4bb);
+        
+    
+            var marker_49a6bdeaf474b2cb4e666a63f109636c = L.marker(
+                [20.7154, 85.5969],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_01bc4254204c789bc9a1156ede8eaf91 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_49a6bdeaf474b2cb4e666a63f109636c.setIcon(custom_icon_01bc4254204c789bc9a1156ede8eaf91);
+        
+    
+            var marker_17fc9b06f0a5620242f478f060d21582 = L.marker(
+                [26.1022, 89.8228],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_b40566d28dd2eff744e8c8a4a1975018 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_17fc9b06f0a5620242f478f060d21582.setIcon(custom_icon_b40566d28dd2eff744e8c8a4a1975018);
+        
+    
+            var marker_da6485c016cb249eec97387289cac768 = L.marker(
+                [26.2757, 77.7743],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_403701cf6ab2defab718dc9b6dc76a47 = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_da6485c016cb249eec97387289cac768.setIcon(custom_icon_403701cf6ab2defab718dc9b6dc76a47);
+        
+    
+            var marker_5fbf1b93b66a372ebe46387e3fe016b4 = L.marker(
+                [25.0345, 83.5062],
+                {}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+    
+        var custom_icon_a1041cebbedd10b7d5230ce772c214af = L.icon({"iconSize": [18, 18], "iconUrl": "https://klimasystem.info.pl/wp-content/uploads/2020/03/point.gif"});
+        marker_5fbf1b93b66a372ebe46387e3fe016b4.setIcon(custom_icon_a1041cebbedd10b7d5230ce772c214af);
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": false, "position": "topright", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
+            ).addTo(map_d1e32bd16e917f358e933a3caf21dee2);
+        
+</script>
+</html>
